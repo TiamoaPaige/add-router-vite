@@ -1,6 +1,7 @@
 import { Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Gallery from "./pages/Gallery";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/about" element={<Gallery />} />
       </Routes>
     </div>
   );
