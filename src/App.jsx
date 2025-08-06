@@ -1,7 +1,7 @@
 import { Routes, Route, Link } from "react-router-dom";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Gallery from "./pages/Gallery";
+import Home from "./pages/Home.jsx";
+import About from "./pages/About.jsx";
+import Gallery from "./pages/Gallery.jsx";
 
 function App() {
   return (
@@ -14,12 +14,15 @@ function App() {
           <li>
             <Link to="/about">About</Link>
           </li>
+          <li>
+            <Link to="/gallery">Gallery</Link>
+          </li>
         </ul>
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/about" element={<Gallery />} />
+        <Route path="/gallery" element={<Gallery />} />
       </Routes>
     </div>
   );
